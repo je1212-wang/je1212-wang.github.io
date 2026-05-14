@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全宇宙都在這！這幾隻「小狐狸」憑什麼偷走全世界的心？</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fox: {
+                            orange: '#FF8C42',
+                            gold: '#F4D35E',
+                            dark: '#1A1A1A',
+                            accent: '#EE6C4D',
+                            glass: 'rgba(255, 255, 255, 0.05)',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0F0F0F;
+            color: #E2E8F0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FF8C42 0%, #F4D35E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-item:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.07);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F0F0F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF8C42;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img src='https://opal.google/board/blobs/6eb864b5-3d43-4c0e-a464-342cb460abb1' alt='media_1' class="w-full h-full object-cover hero-mask scale-105 animate-pulse-slow" />
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-5xl">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-fox-orange text-black rounded-full animate-bounce">
+                Featured Insight
+            </span>
+            <h1 class="text-5xl md:text-8xl font-display font-black leading-tight mb-8">
+                全宇宙都在這！<br>
+                <span class="gradient-text">這幾隻「小狐狸」</span><br>
+                偷走了全世界的心？
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
+                從 Web3 的數位密鑰到巴黎街頭的時尚圖騰，狐狸正在跨越維度，重新定義當代的生活美學。
+            </p>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce text-gray-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        
+        <!-- Intro Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-32">
+            <div class="lg:col-span-5 sticky top-24">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">
+                    你今天被<br><span class="text-fox-orange">「狐狸」</span>抓住了嗎？
+                </h2>
+                <p class="text-gray-400 leading-loose text-lg">
+                    別再以為「小狐狸」只是森林裡的保護色動物了！現在如果你隨便在信義區、巴黎街頭或者 Web3 的 Discord 頻道晃一圈，你會發現這隻聰明又狡黠的小傢伙簡直無所不在。
+                </p>
+            </div>
+            <div class="lg:col-span-7 glass-card p-8 md:p-12 space-y-6">
+                <p class="text-xl leading-relaxed">
+                    環顧四周，從你的手機螢幕、身上的 T-shirt 到床頭的玩偶，你是每天盯著虛擬貨幣 K 線的 Web3 玩家、注重剪裁的穿搭潮人，還是願意為了周邊排隊三小時的追星狂粉？
+                </p>
+                <p class="text-xl text-fox-gold font-medium">
+                    不管你是哪一派，你很可能都已經掉進了不同「狐狸」的圈套裡。今天，我們就來拆解這幾隻橫跨科技、時尚與大眾文化的神祕狐狸。
+                </p>
+            </div>
+        </section>
+
+        <!-- Bento Grid: The Fox Multiverse -->
+        <section class="mb-32">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+                <h2 class="text-3xl md:text-5xl font-display font-bold">狐狸多重宇宙 <span class="text-fox-orange">/ Universe</span></h2>
+                <p class="text-gray-500 font-display">THE DIFFERENT AVATARS OF FOXES</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- MetaMask -->
+                <div class="md:col-span-2 glass-card p-8 bento-item group border-l-4 border-l-orange-500">
+                    <div class="w-12 h-12 mb-6 bg-orange-500/20 rounded-xl flex items-center justify-center text-orange-500 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zM12 4L4.5 16.5l7.5 3.5 7.5-3.5L12 4z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Web3 守門人：MetaMask</h3>
+                    <p class="text-gray-400">那個標誌性的橘色狐狸頭，就是你進入加密世界的專屬身分證。只要你想玩 NFT、搞 DeFi，沒這隻狐狸點頭，你哪兒也去不了。</p>
+                </div>
+
+                <!-- Maison Kitsuné -->
+                <div class="md:col-span-2 glass-card p-8 bento-item group border-l-4 border-l-blue-400">
+                    <div class="w-12 h-12 mb-6 bg-blue-400/20 rounded-xl flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">法式小清新：Maison Kitsuné</h3>
+                    <p class="text-gray-400">這隻狐狸很有個性，代表了一種「我很有品味，但我不說」的法日混血美學，深受質感文青喜愛。</p>
+                </div>
+
+                <!-- Fjällräven -->
+                <div class="md:col-span-1 glass-card p-8 bento-item group border-l-4 border-l-red-500">
+                    <h3 class="text-xl font-bold mb-4">戶外北極星</h3>
+                    <p class="text-sm text-gray-400">Fjällräven，每個 Kånken 背包上的靈魂，代表與自然共生的生活態度。</p>
+                </div>
+
+                <!-- LinaBell -->
+                <div class="md:col-span-3 glass-card p-8 bento-item group bg-gradient-to-br from-pink-500/10 to-transparent border-l-4 border-l-pink-400">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-4 text-pink-300">偷心大盜：玲娜貝兒（LinaBell）</h3>
+                            <p class="text-gray-400">不需要作品，光靠那雙會說話的大眼睛和粉嫩的尾巴，就成了流量時代的絕對霸主。這可能是歷史上最神奇的狐狸。</p>
+                        </div>
+                        <div class="w-24 h-24 rounded-full border-4 border-pink-400/30 flex-shrink-0 flex items-center justify-center animate-float">
+                            <span class="text-4xl">🦊</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Archaeology Section -->
+        <section class="mb-32 relative">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-fox-orange/10 blur-[120px] rounded-full"></div>
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-16 text-center">狐狸考古學：這小傢伙哪來的？</h2>
+            
+            <div class="space-y-12">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-4 text-right hidden md:block">
+                        <span class="text-6xl font-display font-black text-white/10">2016</span>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-8 hover:bg-white/5 transition-colors">
+                        <h4 class="text-xl font-bold text-fox-orange mb-2">科技宅的浪漫</h4>
+                        <p class="text-gray-300 leading-relaxed">MetaMask 誕生於 ConsenSys。當時連結以太坊是惡夢，這隻狐狸的出現讓區塊鏈變得「像正常人類能用的東西」。直到 2020 年正式躍升全球標竿。</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-4 text-right hidden md:block">
+                        <span class="text-6xl font-display font-black text-white/10">2002</span>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-8 hover:bg-white/5 transition-colors">
+                        <h4 class="text-xl font-bold text-fox-gold mb-2">時尚圈的跨界狂想</h4>
+                        <p class="text-gray-300 leading-relaxed">Daft Punk 前經紀人 Gildas Loaëc 與黑木理也將音樂、咖啡與時裝揉合。「Kitsuné」一詞即日文的「狐狸」，連結了傳統與現代。</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-4 text-right hidden md:block">
+                        <span class="text-6xl font-display font-black text-white/10">2021</span>
+                    </div>
+                    <div class="md:col-span-8 glass-card p-8 hover:bg-white/5 transition-colors">
+                        <h4 class="text-xl font-bold text-pink-400 mb-2">流量時代的奇蹟</h4>
+                        <p class="text-gray-300 leading-relaxed">玲娜貝兒在上海迪士尼首發，打破了「先有故事，才有 IP」的傳統公式。證明了情緒價值與顏值就是當代的硬通貨。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2026 Trend -->
+        <section class="mb-32">
+            <div class="glass-card bg-gradient-to-br from-fox-orange/20 to-transparent p-12 rounded-[40px] overflow-hidden relative">
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-display font-bold mb-12">2026 的狐狸熱：為什麼我們現在離不開牠？</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div>
+                            <div class="text-3xl font-black mb-4 opacity-20">01</div>
+                            <h5 class="text-xl font-bold mb-4">數位通行證進化</h5>
+                            <p class="text-gray-400 leading-relaxed">不再只是存錢筒。隨著空投積分與 $MASK 代幣預期，它成了支援「全鏈」的一站式金融入口。</p>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-black mb-4 opacity-20">02</div>
+                            <h5 class="text-xl font-bold mb-4">靜奢戶外風</h5>
+                            <p class="text-gray-400 leading-relaxed">Maison Kitsuné 成功將高端機能布料與法式剪裁融合，回應了我們對過度工業化的反叛。</p>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-black mb-4 opacity-20">03</div>
+                            <h5 class="text-xl font-bold mb-4">情緒藥方</h5>
+                            <p class="text-gray-400 leading-relaxed">在社會疏離感中，小狐狸 IP 提供的不是複雜的故事，而是純粹的「陪伴感」與療癒氛圍。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controversy: Pro & Con -->
+        <section class="mb-32">
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-12 text-center">正面剛！<br><span class="text-gray-500">狐狸也有讓人糾結的時候</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-white/10 rounded-3xl hover:border-fox-orange transition-colors">
+                    <div class="text-fox-orange mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <h5 class="text-xl font-bold mb-4">安全還是災難？</h5>
+                    <p class="text-gray-400 text-sm leading-loose">助記詞管理始終是新手惡夢，釣魚詐騙頻傳。科技便利與資安風險之間，許多人付出了昂貴的學費。</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-3xl hover:border-fox-gold transition-colors">
+                    <div class="text-fox-gold mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                    </div>
+                    <h5 class="text-xl font-bold mb-4">Logo 還是品質？</h5>
+                    <p class="text-gray-400 text-sm leading-loose">一件基礎款服飾價格不菲，常引起「購買的是品牌還是品質」的討論，反映了當代品牌溢價的質疑。</p>
+                </div>
+                <div class="p-8 border border-white/10 rounded-3xl hover:border-pink-400 transition-colors">
+                    <div class="text-pink-400 mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h5 class="text-xl font-bold mb-4">黃牛的提款機</h5>
+                    <p class="text-gray-400 text-sm leading-loose">限定系列的嚴重炒作讓真心粉絲感到心累。當「可愛」變成被炒作的商品，純粹性正遭受考驗。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Forecast -->
+        <section class="mb-32">
+            <h2 class="text-4xl md:text-5xl font-display font-bold mb-16">變身預告：未來的狐狸會長怎樣？</h2>
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1 glass-card p-10 hover:bg-orange-500/10 group">
+                        <h4 class="text-2xl font-bold mb-4 group-hover:text-fox-orange transition-colors">刷臉就能進 Web3</h4>
+                        <p class="text-gray-400">透過「帳戶抽象化（AA）」技術，未來你可能不需要備份複雜私鑰，指紋一按，小狐狸就會開啟區塊鏈大門。</p>
+                    </div>
+                    <div class="flex-1 glass-card p-10 hover:bg-blue-500/10 group">
+                        <h4 class="text-2xl font-bold mb-4 group-hover:text-blue-400 transition-colors">AR 狐狸陪你喝咖啡</h4>
+                        <p class="text-gray-400">時尚品牌將更多地與實體空間或數位空間（NFT 數位穿戴）結合。在現實與數位的交界處，小狐狸將無縫穿梭。</p>
+                    </div>
+                </div>
+                <div class="glass-card p-10 hover:bg-green-500/10 group">
+                    <h4 class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors">更環保與療癒的主題</h4>
+                    <p class="text-gray-400">Fjällräven 等品牌將繼續引領環保材質驅動的綠色時尚；而影視角色將更強調「可感知」的療癒力量。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion & Interaction -->
+        <section class="text-center py-20 border-t border-white/10">
+            <h2 class="text-4xl md:text-6xl font-display font-black mb-8">哪隻狐狸是你的真愛？</h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+                狐狸之所以能在各個領域稱霸，是因為牠象徵著「聰明、機智與彈性」，而這正好契合了這個變動劇烈、不確定性極高的時代。
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-20">
+                <button class="px-8 py-4 rounded-full bg-fox-orange text-black font-bold hover:scale-105 transition-transform active:scale-95">
+                    🍊 我是 Web3 冒險者
+                </button>
+                <button class="px-8 py-4 rounded-full border border-white/20 hover:bg-white/10 font-bold transition-all">
+                    ☕️ 時尚文青在這邊
+                </button>
+                <button class="px-8 py-4 rounded-full border border-white/20 hover:bg-pink-500/20 hover:border-pink-500 font-bold transition-all">
+                    🌸 玲娜貝兒最高！
+                </button>
+            </div>
+
+            <div class="max-w-xl mx-auto glass-card p-2 flex items-center">
+                <input type="text" placeholder="留言分享你的狐狸信仰..." class="bg-transparent border-none focus:ring-0 flex-1 px-6 text-white">
+                <button class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-fox-orange transition-colors">SEND</button>
+            </div>
+            
+            <div class="mt-24 flex justify-between items-center text-xs tracking-widest text-gray-600 uppercase font-display">
+                <span>Article ID: M11408004</span>
+                <span>The Fox Era &copy; 2024</span>
+                <span>Modern Aesthetics</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Background Decor -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30">
+        <div class="absolute top-[20%] left-[10%] w-[400px] h-[400px] bg-fox-orange/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[10%] right-[10%] w-[300px] h-[300px] bg-fox-gold/10 rounded-full blur-[100px]"></div>
+    </div>
+
+    <script>
+        // Smooth scroll effect or micro-interactions
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const colors = ['#FF8C42', '#F4D35E', '#EE6C4D', '#FFC8DD'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                button.style.borderColor = randomColor;
+                setTimeout(() => {
+                    button.style.borderColor = '';
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
